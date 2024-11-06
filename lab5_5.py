@@ -1,4 +1,18 @@
 # Zadanie 5
+# Napisz dekorator 'accepts', który sprawdza czy argumenty przekazane do funkcji
+# (zarówno pozycyjne jak i nazwane) są odpowiedniego typu.
+# Typy argumentów są przekazywane jako argumenty dekoratora w kolejności
+# odpowiadającej parametrom dekorowanej funkcji.
+#
+# Przykład:
+# @accepts(float, int)
+# def func(x, y):  # x musi być float, y musi być int
+#     return x + y
+#
+# Wywołania poprawne:
+# - func(1.0, 2)
+# - func(x=1.0, y=2)
+# - func(1.0, y=2)
 def accepts(*types):
     """Sprawdza czy udekorowanej funckji zostały podane odpowiednie parametry zdefiniowane 
        w argumentach dekoratora"""

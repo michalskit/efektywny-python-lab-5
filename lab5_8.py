@@ -1,4 +1,10 @@
 # Zadanie 8
+# Napisz dekorator 'zlozenie(n)', który przyjmuje argument n i powoduje
+# n-krotne wywołanie funkcji na jej wyniku. Przykładowo:
+# - dla n=0: x     # funkcja nie jest wywoływana
+# - dla n=1: f(x)
+# - dla n=2: f(f(x))
+# - dla n=3: f(f(f(x)))
 def zlozenie(n):
     """
     Dekorator, który przyjmuje liczbę całkowitą n i zwraca nowy dekorator, który
